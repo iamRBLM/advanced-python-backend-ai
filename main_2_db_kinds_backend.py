@@ -85,17 +85,17 @@ if __name__ == '__main__':
 
     # 3. Simulate registering a new user with dynamic metadata
     success = backend_service.register_new_user(
-        username="Nitzan_dev",
-        email="nitzan@gmail.com",
+        username="Boris_frontEnd_UX",
+        email="Boris@gmail.com",
         metadata={
-            "ip": "172.16.31.10",
-            "os": "Ubuntu 22.04",
-            "course": "Backend Engineering"
+            "ip": "180.50.50.8",
+            "os": "Mac 55.04",
+            "course": "FS Engineering"
         }
     )
 
     # 4. If registration succeeded, fetch and print the combined profile view
     if success:
-        complete_view = backend_service.get_complete_profile(username="Nitzan_dev")
+        complete_view = backend_service.get_complete_profile(username="Boris_frontEnd_UX")
         print("\n---- Aggregated Profile Result ----")
         pprint.pprint(complete_view)

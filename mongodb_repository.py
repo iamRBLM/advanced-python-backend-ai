@@ -41,7 +41,7 @@ class AuditMongoRepository:
         """
         # Guard clause: Skip execution if the DB client failed to connect
         if self.client is None:
-            logging.warning("[MongoDB] Skipping log entry; client is not connected!")
+            logging.warning("[MongoDB] Skipping log entry, client is not connected!")
             return False
 
         try:
@@ -67,7 +67,7 @@ class AuditMongoRepository:
         Converts MongoDB's ObjectId to a string for clean serialization.
         """
         if self.client is None:
-            logging.warning("[MongoDB] Cannot fetch logs; client is not connected.")
+            logging.warning("[MongoDB] Cannot fetch logs, client is not connected.")
             return []
 
         try:
