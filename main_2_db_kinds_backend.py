@@ -96,6 +96,6 @@ if __name__ == '__main__':
 
     # 4. If registration succeeded, fetch and print the combined profile view
     if success:
-        complete_view = backend_service.get_complete_profile(username="Boris_frontEnd_UX")
+        complete_view = backend_service.get_complete_profile(username="Erez_CTO")
         print("\n---- Aggregated Profile Result ----")
         pprint.pprint(complete_view)
